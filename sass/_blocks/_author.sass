@@ -1,0 +1,39 @@
+@import "../vars"
+
+.author
+  display: flex
+  order: 2
+
+.author__rating
+  display: flex
+  width: 140px
+  justify-content: space-between
+
+.author__rating-item
+  display: block
+  width: 20px
+  height: 20px
+  border: 2px solid #ff5859
+  border-radius: 10px
+  &--active
+    background: #ff5859
+
+.author__wrapper
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin-left: 30px
+
+.author__photo
+  width: 120px
+  height: 120px
+  object-fit: cover
+  border-radius: 50%
+
+.author__name
+  font-size: 24px
+  font-weight: 600
+
+.author__position, .author__city
+  font-size: 16px
+  font-weight: 600

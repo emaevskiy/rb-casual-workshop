@@ -1,0 +1,41 @@
+@import "../vars"
+
+.page-header
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  background: url('../img/_xdthdnGESk1.jpg') center no-repeat
+  background-size: cover
+  padding-bottom: 30px
+
+.page-header__wrapper
+  width: 100%
+  max-width: 1250px
+  margin: auto
+  padding: 0 50px
+  &--top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 auto
+  &--bottom
+    display: flex
+    margin: auto auto 0 auto
+    justify-content: center
+
+.page-header__tel
+  font-size: 28px
+  color: #ffffff
+  transition: .3s
+  &:hover, &:focus
+    color: #ff5859
+    text-decoration: none
+    transition: .3s
+
+.page-header__title
+  font-size: 42px
+  font-weight: 600
+  color: #ffffff
+  text-align: center
+  text-shadow: 5px 0 2px rgba(0, 0, 0, .5)
+  margin-bottom: 60px

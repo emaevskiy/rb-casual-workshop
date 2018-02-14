@@ -1,0 +1,72 @@
+@import "../vars"
+
+.callback
+  position: relative
+  padding: 20px 50px 40px 50px
+  background: url('../img/kozha-chernaya-treschiny-tekstura.jpg') top  no-repeat
+  // background: #f9d300
+  background-size: cover
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(0, 0, 0, .4)
+    z-index: 0
+    // background: rgba(0, 0, 0, .0)
+
+.callback-form
+  position: relative
+  width: 100%
+  max-width: 674px
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 20px 0
+  z-index: 1
+
+.callback-form__title
+  font-size: 35px
+  color: #ffffff
+  text-align: center
+  & > i
+    color: #f9d300
+
+.callback-form__info
+  font-size: 24px
+  color: #ffffff
+  text-align: center
+  margin-bottom: 20px
+
+
+.callback-form__wrapper
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.callback-form__input
+  max-width: 330px
+  margin-bottom: 15px
+  &:nth-of-type(1)
+    margin-right: 14px
+
+.callback-form__btn
+  font-size: 24px
+  height: 64px
+  margin-bottom: 15px
+
+.callback-form__checkbox
+  width: 20px
+  height: 20px
+
+.callback-form__accept
+  font-size: 20px
+  color: #ffffff
+  margin-left: 15px
+  &:hover, &:focus
+    color: #ffffff

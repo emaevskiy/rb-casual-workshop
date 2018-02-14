@@ -1,0 +1,71 @@
+@import "../vars"
+
+.works
+  padding: 50px 0 80px 0
+  background: #eeeeee
+
+.works__wrapper
+  max-width: 1250px
+  padding: 0 50px
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.works__title
+  width: 100%
+  font-size: 48px
+  font-weight: 600
+  text-align: center
+  margin-bottom: 60px
+
+.works__list
+  display: block
+  width: calc(100% / 3 - 12px)
+
+.works__item
+  position: relative
+  width: 100%
+  height: 300px
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, .2)
+  margin-bottom: 20px
+  overflow: hidden
+  cursor: pointer
+  &--small
+    height: 200px
+  &--large
+    height: 400px
+  &:hover
+    .works__img
+      transform: scale3d(1.1, 1.1, 1)
+      transition: 1s
+    .works__desc
+      opacity: 1
+      transition: .5s
+
+.works__img
+  width: 100%
+  height: 100%
+  object-fit: cover
+  transition: 1s
+
+.works__desc
+  position: absolute
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: left
+  opacity: 0
+  padding: 20px
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: rgba(0, 0, 0, .5)
+  font-size: 14px
+  color: #ffffff
+  transition: .5s
+
+.works__name
+  padding-bottom: 5px
+  font-weight: 600
